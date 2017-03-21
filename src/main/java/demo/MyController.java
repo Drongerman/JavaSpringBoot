@@ -13,7 +13,7 @@ public class MyController {
 	
 	@Autowired TeamDao teamDao;
 	
-	@RequestMapping("/teams/{name}")
+	@RequestMapping("/hi/{name}")
 	public Team hiThere(@PathVariable String name){
 		return teamDao.findByName(name);
 	}
